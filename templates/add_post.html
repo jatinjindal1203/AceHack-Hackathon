@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Post</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa; /* Set background color */
+        }
+        .container {
+            margin-top: 50px; /* Add margin from the top */
+        }
+        .card {
+            border: none; /* Remove border */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card shadow-lg p-4 bg-white rounded">
+            <h1 class="mb-4">Create a New Post</h1>
+            <form action="" method="post">
+                <div class="form-group">
+                    <label for="title">Title:</label>
+                    <input type="text" class="form-control" id="title" name="title" placeholder="Enter title">
+                </div>
+                <div class="form-group">
+                    <label for="content">Content:</label>
+                    <textarea class="form-control" id="content" name="content" rows="5" placeholder="Enter content"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="author">Author:</label>
+                    <input type="text" class="form-control" id="author" name="author" placeholder="Enter author">
+                </div>
+                <div class="form-group">
+                    <label for="category">Category:</label>
+                    <select class="form-control" id="category" name="category">
+                        <option value="">Select category...</option>
+                        <option value="IT">IT</option>
+                        <option value="Engineering">Engineering</option>
+                        <option value="Healthcare">Healthcare</option>
+                        <option value="Finance">Finance</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Internship">Internship</option>
+                        <option value="Job">Job</option>
+                        <option value="Geopolitics">Geopolitics</option>
+                        <option value="Competitve Exam">Competitve Exam</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
